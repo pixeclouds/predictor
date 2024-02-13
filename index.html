@@ -206,7 +206,8 @@
         resultDisplay.style.display = "none";
 
         // Send request to server
-        fetch('https://cuddly-parakeet-jgprrp66xr6fqqg5-5000.app.github.dev/predict', {
+        
+        fetch('https://bug-free-trout-597vv766jjqcv55j-5000.app.github.dev/predict' , {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -237,7 +238,7 @@
         .catch(error => {
             console.log('Error:', error);
             // Handle error, e.g., display error message
-            resultDisplay.innerHTML = "TTraffic overload. Try again later";
+            resultDisplay.innerHTML = "Traffic overload. Try again later";
             // Hide loading animation
             loadingContainer.style.display = "none";
             resultDisplay.style.display = "block";
